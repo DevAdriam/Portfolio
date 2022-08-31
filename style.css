@@ -40,7 +40,7 @@
 
 .menuitems {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 .menuitems li {
   list-style: none;
@@ -88,11 +88,10 @@
   .menubtn.active .menubar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  /* nav */
   .menuitems {
     position: fixed;
     top: 49px;
-    left: -800px;
+    left: -1000px;
 
     text-align: center;
     flex-direction: column;
@@ -113,29 +112,12 @@
     left: 0;
   }
 }
+
 /* --------------------intro------------- */
+
 #banner {
   width: 100%;
-
   background: var(--bg);
-}
-.introimage {
-  padding-top: 100px;
-
-  animation-name: myani;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-
-@keyframes myani {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-20px);
-  }
 }
 
 .intropara {
@@ -184,4 +166,22 @@
 }
 .msg {
   width: 20px;
+}
+.introimage img {
+  padding-top: 100px;
+
+  animation-name: myani;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myani {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
 }
